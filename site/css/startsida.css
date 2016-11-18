@@ -2,24 +2,37 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-image: url("http://imgur.com/B6EUSGR.gif");
+  background-size: cover;
 }
 header{
   display: flex;
   flex-grow: 1;
-  background-color: aquamarine;
+/*  background-color: aquamarine;
   height: 100px;
-  width: 600px;
+  width: 600px;*/
   margin: 5px;
-  box-shadow: 5px 5px 3px #888888;
-}
-h1 {
+  /*box-shadow: 5px 5px 3px #888888;*/
   text-align: center;
 }
+h1 {
+  text-shadow: 7px 7px 2px #888888;
+  font-size: 75px;
+  animation: blinker 0.1s linear infinite;
+}
+
+  @keyframes blinker {
+    50% { opacity: 0; }
+    from {color:red;}
+    to {color: hotpink;}
+
+  }
+
+
 nav{
   display: flex;
   flex-grow: 1;
-  background-color: pink;
+  background-color: gainsboro;
   height: 75px;
   width: 600px;
     margin: 5px;
@@ -29,7 +42,7 @@ nav{
 article{
   display: flex;
   flex-grow: 8;
-  background-color: red;
+  background-color: gainsboro;
   height: 600px;
   width: 600px;
     margin: 5px;
